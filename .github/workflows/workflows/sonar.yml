@@ -26,3 +26,8 @@ jobs:
         uses: SonarSource/sonarqube-scan-action@v5.0.0
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        with:
+          args: >
+            -Dsonar.projectKey=tzofiyav-github_devops-project
+            -Dsonar.organization=tzofiyav-github
+            -Dsonar.host.url=https://sonarcloud.io
